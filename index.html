@@ -22,6 +22,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--annimations-->
   </head>
   <body>
     <!-- header -->
@@ -36,7 +38,7 @@
       </ul>
       <div class="icons">
         <a href="#"><i class="ri-search-line"></i></a>
-        <a href="#"><i class="ri-shopping-cart-line"></i></a>
+        <a href="cart.html"><i class="ri-shopping-cart-line"></i></a>
         <a href="#"><i class="ri-user-line"></i></a>
         <div class="bx bx-menu" id="menu-icon"></div>
       </div>
@@ -44,7 +46,7 @@
 
     <!--- home -->
     <section class="home">
-      <div class="home-text">
+      <div class="home-text" data-aos="fade-up">
         <h6>New Arrivals</h6>
         <h1>
           New Arrivals <br />
@@ -62,7 +64,7 @@
 
     <!--- brands --->
     <div class="brands">
-      <div class="main-brands">
+      <div class="main-brands" data-aos="zoom-in">
         <div class="brands-c">
           <img src="zara-brand-40050.jpg" />
         </div>
@@ -77,7 +79,7 @@
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>All Products</title>
         <link rel="stylesheet" href="styles.css" />
         <link
@@ -88,11 +90,11 @@
       <body>
         <!-- All Products -->
         <section class="n-product">
-          <div class="center-text">
+          <div class="center-text" data-aos="fade-down">
             <h2>All Products</h2>
           </div>
           <br />
-          <div class="n-content">
+          <div class="n-content" data-aos="zoom-in">
             <div class="product-card">
               <div class="row-img">
                 <img
@@ -111,10 +113,12 @@
               </div>
               <div class="row-in">
                 <div class="row-left">
-                  <a href="#"
-                    >Add to cart
-                    <i class="ri-shopping-cart-fill"></i>
-                  </a>
+                  <a href="#" class="add-to-cart" 
+                    data-name="T-shirt with tape details" 
+                    data-price="150.00"
+                    data-image="Screenshot (331).png">
+                    Add to cart <i class="ri-shopping-cart-fill"></i>
+                 </a>                               
                 </div>
                 <div class="row-right">
                   <h5>$150.00</h5>
@@ -139,9 +143,9 @@
               </div>
               <div class="row-in">
                 <div class="row-left">
-                  <a href="#"
-                    >Add to cart
-                    <i class="ri-shopping-cart-fill"></i>
+                  <a href="#" class="add-to-cart" data-name="Sleeveless Fit And Flare Outfit With Belt" data-price="450.00"
+                    data-image="Screenshot (333).png">
+                    Add to cart <i class="ri-shopping-cart-fill"></i>
                   </a>
                 </div>
                 <div class="row-right">
@@ -164,9 +168,9 @@
               </div>
               <div class="row-in">
                 <div class="row-left">
-                  <a href="#"
-                    >Add to cart
-                    <i class="ri-shopping-cart-fill"></i>
+                  <a href="#" class="add-to-cart" data-name="Knitted Womens Scarves" data-price="50.00"
+                   data-image="Screenshot (334).png">
+                   Add to cart <i class="ri-shopping-cart-fill"></i>
                   </a>
                 </div>
                 <div class="row-right">
@@ -181,7 +185,7 @@
                   alt="Fashionable denim pants for man"
                 />
               </div>
-              <h3>Fashionable denim pants for man</h3>
+              <h3>Fashionable pants for man</h3>
               <div class="stars">
                 <a href="#"><i class="ri-star-fill"></i></a>
                 <a href="#"><i class="ri-star-fill"></i></a>
@@ -192,9 +196,9 @@
               </div>
               <div class="row-in">
                 <div class="row-left">
-                  <a href="#"
-                    >Add to cart
-                    <i class="ri-shopping-cart-fill"></i>
+                  <a href="#" class="add-to-cart" data-name="Fashionable pants for man" data-price="300.00"
+                  data-image="Screenshot (335).png">
+                  Add to cart <i class="ri-shopping-cart-fill"></i>
                   </a>
                 </div>
                 <div class="row-right">
@@ -217,9 +221,8 @@
               </div>
               <div class="row-in">
                 <div class="row-left">
-                  <a href="#"
-                    >Add to cart
-                    <i class="ri-shopping-cart-fill"></i>
+                  <a href="#" class="add-to-cart" data-name="Chemise" data-price="378.00" data-image="Screenshot (336).png">
+                  Add to cart <i class="ri-shopping-cart-fill"></i>
                   </a>
                 </div>
                 <div class="row-right">
@@ -245,9 +248,8 @@
               </div>
               <div class="row-in">
                 <div class="row-left">
-                  <a href="#"
-                    >Add to cart
-                    <i class="ri-shopping-cart-fill"></i>
+                  <a href="#" class="add-to-cart" data-name="BLUE-PLEATED-SKIRT" data-price="550.00" data-image="Screenshot (337).png">
+                  Add to cart <i class="ri-shopping-cart-fill"></i>
                   </a>
                 </div>
                 <div class="row-right">
@@ -259,7 +261,7 @@
               <div class="row-img">
                 <img src="Screenshot (339).png" alt="Accessores" />
               </div>
-              <h3>Necklace && Earring</h3>
+              <h3>Necklace & Earring</h3>
               <div class="stars">
                 <a href="#"><i class="ri-star-fill"></i></a>
                 <a href="#"><i class="ri-star-fill"></i></a>
@@ -270,9 +272,8 @@
               </div>
               <div class="row-in">
                 <div class="row-left">
-                  <a href="#"
-                    >Add to cart
-                    <i class="ri-shopping-cart-fill"></i>
+                  <a href="#" class="add-to-cart" data-name="Necklace & Earring" data-price="100.00" data-image="Screenshot (339).png">
+                  Add to cart <i class="ri-shopping-cart-fill"></i>
                   </a>
                 </div>
                 <div class="row-right">
@@ -295,9 +296,8 @@
               </div>
               <div class="row-in">
                 <div class="row-left">
-                  <a href="#"
-                    >Add to cart
-                    <i class="ri-shopping-cart-fill"></i>
+                  <a href="#" class="add-to-cart" data-name="Sunglass" data-price="550.00"data-image="Screenshot (341).png">
+                  Add to cart <i class="ri-shopping-cart-fill"></i>
                   </a>
                 </div>
                 <div class="row-right">
@@ -306,14 +306,13 @@
               </div>
             </div>
           </div>
-          <div class="n-btn">
+          <div class="n-btn" data-aos="zoom-in">
             <a href="#" class="btn2">View All</a>
           </div>
         </section>
-
         <!-- feature --->
         <section class="feature">
-          <div class="feature-content">
+          <div class="feature-content" data-aos="fade-down">
             <div class="box">
               <div class="f-icon">
                 <i class="ri-bank-card-fill"></i>
@@ -352,13 +351,12 @@
             </div>
           </div>
         </section>
-
         <!-- best selling --->
         <section class="selling">
-          <div class="center-text">
+          <div class="center-text" data-aos="fade-up">
             <h2>Best Seller</h2>
           </div>
-          <div class="selling-content">
+          <div class="selling-content" data-aos="zoom-in-up">
             <div class="col">
               <div class="col-img">
                 <img src="Screenshot (339).png" />
@@ -394,7 +392,7 @@
 
         <!--- newsletter section --->
         <section class="newsletter">
-          <div class="newsletter-content">
+          <div class="newsletter-content" data-aos="zoom-in">
             <div class="newsletter-text">
               <h2>Get On the List!</h2>
               <p>Sign up with your email address to receive updates.</p>
@@ -405,8 +403,7 @@
             </form>
           </div>
         </section>
-
-        <section class="footer">
+        <section class="footer" data-aos="fade-down">
           <div class="footer-box">
             <h3>Company</h3>
             <a href="#">About</a>
@@ -436,9 +433,42 @@
             </div>
           </div>
         </section>
-      
-        
+        <!-- copyright --->
+        <div class="copyright">
+          <div class="end-text">
+            <p>CopyRight 2024 By Tahmid Ahmed</p>
+          </div>
+          <div class="end-img">
+            <img src="Screenshot (362).png" />
+          </div>
+        </div>
+         <!-- Cart Modal 
+         <div id="cart-modal" class="cart-modal">
+          <div class="cart-modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+            <button id="checkout-btn" class="btn">
+              Checkout
+            </button>
+          </div>
+        </div>;
+-->
+        <script>
+  document.getElementById('checkout-btn').addEventListener('click', function() {
+    window.location.href = 'checkout.html'; // Redirects to the checkout page
+  });
+</script>
+
         <script src="index.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset: 300,
+            duration: 1450,
+          });
+        </script>
       </body>
     </html>
   </body>
