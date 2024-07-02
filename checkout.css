@@ -1,0 +1,211 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--bg-color);
+    padding: 10px 10%; /* Reduced padding to make the header smaller */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.6s;
+  }
+  
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  
+ 
+    background: linear-gradient(135deg, #ffffff 0%, #cccccc 50%, #000000 100%), 
+                radial-gradient(circle, #ffffff, #cccccc);
+    background-blend-mode: overlay; /* Blend the gradients together */
+  
+  
+
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Checkout container styling */
+.checkout-container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+/* Header styling */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+/* Form styling */
+#checkout-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.name-group {
+  display: flex;
+  gap: 20px;
+}
+
+.half-width {
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Textarea styling */
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+/* Button styling */
+button {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3 0%, #003d7a 100%);
+}
+
+button:active {
+  background: linear-gradient(135deg, #003d7a 0%, #002d59 100%);
+  transform: scale(0.98);
+}
+/* Bottom-right image styling */
+.bottom-right-image {
+    width: 600px; /* Adjust as needed */
+    height:600px; /* Maintain aspect ratio */
+    margin-left: 20px;
+  }
+  /* Updated .logo-container and .logo styling */
+.logo-container {
+    text-align: center;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    padding: 2px; /* Adjust padding if needed */
+  }
+  
+  .logo {
+    text-decoration: none;
+    font-size: 24px; /* Adjust the font size to make the logo smaller */
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .checkout-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+  @media (max-width: 480px) {
+    .checkout-container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+    }
+  }
+  /* Base styling for form groups */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .name-group {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .half-width {
+    flex: 1;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .name-group {
+      flex-direction: column;
+    }
+  
+    .half-width {
+      flex: none;
+      width: 100%;
+    }
+  }
+  

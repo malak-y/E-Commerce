@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - ShopEase</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        .delivery-info {
+            color: #4caf50;
+            font-weight: bold;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+            max-width: 800px;
+        }
+        .cart-item img {
+            max-width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .cart-item-details {
+            flex-grow: 1;
+        }
+        .cart-item h4 {
+            margin: 0;
+            font-size: 16px;
+        }
+        .cart-item-price, .cart-item-quantity {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .cart-item button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            color: #e74c3c;
+            transition: color 0.3s;
+        }
+        .cart-item button:hover {
+            color: #c0392b;
+        }
+        .checkout-btn {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .checkout-btn:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+        .checkout-btn:active {
+            background-color: #1e7e34;
+            transform: scale(1.02);
+        }
+        .cart-total {
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">ShopEase</a>
+        <ul class="headerlist">
+            <li><a href="index.html">Shop</a></li>
+            <li><a href="#">On Sale</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <a href="#"><i class="ri-search-line"></i></a>
+            <a href="cart.html"><i class="ri-shopping-cart-line"></i></a>
+            <a href="#"><i class="ri-user-line"></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <div class="cart-total">
+            <h3>Total: $<span id="cart-total">0.00</span></h3>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </section>
+    <script src = "cart.js"></script>
+</body>
+</html>
