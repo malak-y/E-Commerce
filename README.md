@@ -1,2 +1,2 @@
 # E-Commerce
-Browse branded clothes, explore new arrivals, and connect with us easily.
+Browse branded clothes, explore new arrivals,search for products and connect with us easily.
