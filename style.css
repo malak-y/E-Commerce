@@ -751,3 +751,35 @@ header {
   cursor: pointer;
 }
 
+.search-results {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.search-results ul {
+  list-style: none;
+  padding: 0;
+}
+
+.search-results li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+.highlight {
+  border: 2px solid #ff0000; /* Red border to highlight the product */
+  transition: all 0.3s ease;
+}
+
+
+.search-results {
+  display: none; /* Initially hide search results */
+}

@@ -48,15 +48,56 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('search-icon').addEventListener('click', function(event) {
+    const searchIcon = document.getElementById('search-icon');
+    const searchForm = document.getElementById('search-form');
+    const searchInput = document.getElementById('search-input');
+    const searchResults = document.getElementById('search-results');
+    const productSection = document.querySelector('.n-product');
+    const productCards = document.querySelectorAll('.product-card');
+  
+    // Toggle search form visibility
+    searchIcon.addEventListener('click', function(event) {
       event.preventDefault();
-      const searchForm = document.getElementById('search-form');
       if (searchForm.style.display === 'block') {
         searchForm.style.display = 'none';
+        searchResults.style.display = 'none';
+        searchInput.value = '';
+        productCards.forEach(card => card.classList.remove('highlight'));
       } else {
         searchForm.style.display = 'block';
+      }
+    });
+  
+    // Handle search functionality
+    searchInput.addEventListener('input', function() {
+      const query = searchInput.value.toLowerCase();
+      searchResults.innerHTML = '';
+  
+      if (query.trim() === '') {
+        searchResults.style.display = 'none';
+        productCards.forEach(card => card.classList.remove('highlight'));
+        return;
+      }
+  
+      let results = [];
+      productCards.forEach(card => {
+        const productName = card.querySelector('h3').innerText.toLowerCase();
+        if (productName.includes(query)) {
+          card.classList.add('highlight');
+          results.push(card.outerHTML);
+        } else {
+          card.classList.remove('highlight');
+        }
+      });
+  
+      if (results.length > 0) {
+        searchResults.style.display = 'block';
+        searchResults.innerHTML = results.join('');
+        productSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the product section
+      } else {
+        searchResults.style.display = 'block';
+        searchResults.innerHTML = '<p>No products found.</p>';
       }
     });
   });

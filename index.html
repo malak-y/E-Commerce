@@ -26,7 +26,6 @@
     <!--annimations-->
   </head>
   <body>
-    <!-- header -->
     <header>
       <a href="#" class="logo">ShopEase</a>
       <ul class="headerlist">
@@ -42,10 +41,13 @@
         <div class="bx bx-menu" id="menu-icon"></div>
       </div>
       <form id="search-form" class="search-form">
-        <input type="text" placeholder="Search products..." />
+        <input type="text" id="search-input" placeholder="Search products..." />
         <button type="submit"><i class="ri-search-line"></i></button>
       </form>
+      
     </header>
+      <!-- Search Results Container -->
+  <div id="search-results" class="search-results"></div>
 
     <!--- home -->
     <section class="home">
@@ -78,21 +80,8 @@
         <div class="brands-c"><img src="Assets/Screenshot (328).png" /></div>
       </div>
     </div>
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>All Products</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
-        />
-      </head>
-      <body>
         <!-- All Products -->
-        <section class="n-product">
+        <section class="n-product" id="product-section">
           <div class="center-text" data-aos="fade-down">
             <h2>All Products</h2>
           </div>
@@ -310,8 +299,8 @@
             </div>
           </div>
           <div class="n-btn" data-aos="zoom-in">
-            <a href="#" class="btn2">View All</a>
-          </div>
+            <a href="products.html" class="btn2">View All</a>
+          </div>        
         </section>
         <!-- feature --->
         <section class="feature">
@@ -450,7 +439,6 @@
     window.location.href = 'checkout.html'; // Redirects to the checkout page
   });
 </script>
-
         <script src="index.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
@@ -459,7 +447,5 @@
             duration: 1450,
           });
         </script>
-      </body>
-    </html>
   </body>
 </html>
