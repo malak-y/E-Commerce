@@ -48,3 +48,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('search-icon').addEventListener('click', function(event) {
+      event.preventDefault();
+      const searchForm = document.getElementById('search-form');
+      if (searchForm.style.display === 'block') {
+        searchForm.style.display = 'none';
+      } else {
+        searchForm.style.display = 'block';
+      }
+    });
+  });
+  

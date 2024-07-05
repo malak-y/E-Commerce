@@ -726,3 +726,28 @@ header {
   color: darkred; /* Change color on hover */
 }
 
+.search-form {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-form input {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.search-form button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
