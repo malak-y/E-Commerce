@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Arrivals - ShopEase</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+            background: var(--bg-color);
+            box-shadow: 0 1px 6px rgb(32 33 36 / 5%);
+            padding: 18px 14%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.6s;
+        }
+
+        .logo {
+            font-size: 24px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: calc(33.333% - 20px); /* Adjusted to fit 3 items per row */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+        }
+
+
+        .product-item img {
+            width: 100%;
+            height: 300px; /* Increased height for larger images */
+            object-fit: contain; /* Cover the container while preserving aspect ratio */
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+        }
+        .product-item img:hover {
+            transform: scale(1.1); /* Scales the image up by 10% on hover */
+        }
+
+        .product-item h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-item .price {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .product-item .old-price {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .product-item a.add-to-cart {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .product-item a.add-to-cart i {
+            font-size: 18px;
+        }
+
+        .product-item a.add-to-cart:hover {
+            background-color: #555;
+        }
+
+        .center-text h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">ShopEase</a>
+        <div class="icons">
+            <a href="cart.html"><i class="ri-shopping-cart-line"></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+        <form id="search-form" class="search-form">
+            <input type="text" id="search-input" placeholder="Search products..." />
+            <button type="submit"><i class="ri-search-line"></i></button>
+        </form>
+    </header>
+    <main>
+        <section class="n-product" id="product-section">
+            <div class="center-text" data-aos="fade-down">
+                <h2>New Arrivals</h2>
+                <div class="product-list">
+                    <!-- Example of new arrival products -->
+                    <div class="product-item">
+                        <img src="Assets/Screenshot (397).png" alt="BLACK PROM DRESS">
+                        <h2>BLACK PROM DRESS</h2>
+                        <p class="price">$1500.00</p>
+                        <a href="#" class="add-to-cart" data-name="BLACK PROM DRESS" data-price="1500.00" data-image="Assets/Screenshot (397).png">
+                            Add to cart <i class="ri-shopping-cart-fill"></i>
+                        </a>
+                    </div>
+                    <div class="product-item">
+                        <img src="Assets/Screenshot (398).png" alt="Samsung Galaxy Watch">
+                        <h2>Samsung Galaxy Watch</h2>
+                        <p class="price">$3500.00</p>
+                        <a href="#" class="add-to-cart" data-name="Samsung Galaxy Watch" data-price="3500.00" data-image="Assets/Screenshot (398).png">
+                            Add to cart <i class="ri-shopping-cart-fill"></i>
+                        </a>
+                    </div>
+                    <div class="product-item">
+                        <img src="Assets/Screenshot (399).png" alt="PYJAMA FEMME HIVER">
+                        <h2>PYJAMA FEMME HIVER</h2>
+                        <p class="price">$560.00</p>
+                        <a href="#" class="add-to-cart" data-name="PYJAMA FEMME HIVER" data-price="560.00" data-image="Assets/Screenshot (399).png">
+                            Add to cart <i class="ri-shopping-cart-fill"></i>
+                        </a>
+                    </div>
+                    <div class="product-item">
+                        <img src="Assets/Screenshot (400).png" alt="MEN'S JACKET">
+                        <h2>MEN'S JACKET</h2>
+                        <p class="price">$800.00</p>
+                        <a href="#" class="add-to-cart" data-name="MEN'S JACKET" data-price="800.00" data-image="Assets/Screenshot (400).png">
+                            Add to cart <i class="ri-shopping-cart-fill"></i>
+                        </a>
+                    </div>
+                    <div class="product-item">
+                        <img src="Assets/Screenshot (401).png" alt="Burkini Moda musulmana">
+                        <h2>Burkini Moda musulmana</h2>
+                        <p class="price">$1300.00</p>
+                        <a href="#" class="add-to-cart" data-name="Burkini Moda musulmana" data-price="1300.00" data-image="Assets/Screenshot (401).png">
+                            Add to cart <i class="ri-shopping-cart-fill"></i>
+                        </a>
+                    </div>
+                    <div class="product-item">
+                        <img src="Assets/Screenshot (402).png" alt="MODEST SKIRT">
+                        <h2>MODEST SKIRT</h2>
+                        <p class="price">$500.00</p>
+                        <a href="#" class="add-to-cart" data-name="MODEST SKIRT" data-price="500.00" data-image="Assets/Screenshot (402).png">
+                            Add to cart <i class="ri-shopping-cart-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

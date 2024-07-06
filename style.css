@@ -777,6 +777,7 @@ header {
 .highlight {
   border: 2px solid #ff0000; /* Red border to highlight the product */
   transition: all 0.3s ease;
+  background-color: #ffe5e5;
 }
 
 
