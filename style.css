@@ -381,57 +381,6 @@ section {
   transform: rotate3d(0, 0, 1, 360deg) scale(1.03);
 }
 
-.newsletter-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 2rem;
-  background: var(--text-color);
-  padding: 60px 70px;
-  border-radius: 28px;
-}
-
-.newsletter-text h2 {
-  color: var(--bg-color);
-  font-size: 40px;
-  font-weight: 800;
-}
-
-.newsletter-text p {
-  font-size: var(--p-font);
-  font-weight: 500;
-  color: var(--bg-color);
-}
-
-.newsletter-content form {
-  display: grid;
-  grid-template-columns: 2fr 1fr; /* Make email field take up more space than the subscribe button */
-  gap: 1rem; /* Adjust the gap between input fields */
-}
-
-.newsletter-content form input:first-child {
-  border: none;
-  outline: none;
-  padding: 15px; /* Adjust padding if needed */
-  background: var(--bg-color);
-  font-size: var(--p-font);
-  color: var(--text-color);
-  border-radius: 5px;
-  width: 100%; /* Ensure the email field takes up full width */
-}
-
-.newsletter-content form input:last-child {
-  padding: 8px 15px; /* Adjust the padding to make the button smaller */
-  font-size: calc(var(--p-font) - 2px); /* Adjust the font size */
-  cursor: pointer;
-  border-radius: 20px; /* Make the button rounded */
-  width: auto; /* Let the button size adjust to its content */
-}
-
-.newsletter-content form input:last-child:hover {
-  background-color: var(--second-color);
-}
-
 .footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -528,7 +477,6 @@ section {
     padding: 10px 4%;
   }
   .feature-content,
-  .newsletter-content,
   .selling-content {
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   }
@@ -607,15 +555,6 @@ section {
     max-width: 100px;
     height: auto;
   }
-  
-  .newsletter-content form input:first-child {
-    padding: 8px;
-  }
-  
-  .newsletter-content form input:last-child {
-    font-size: 12px;
-  }
-
 
 /* For screens 530px or smaller */
 @media (max-width: 530px) {
