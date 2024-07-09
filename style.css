@@ -5,6 +5,10 @@
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 :root {
   --bg-color: #ffffff;
