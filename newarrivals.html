@@ -6,6 +6,7 @@
     <title>New Arrivals - ShopEase</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="icon" href="Assets/Screenshot (403).png" type="image/png" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -42,7 +43,9 @@
         main {
             padding: 20px;
         }
-
+        .center-text h2{
+           padding: 20PX;
+        }
         .product-list {
             display: flex;
             flex-wrap: wrap;
@@ -114,6 +117,46 @@
         .center-text h2 {
             margin-bottom: 20px;
         }
+        /* Mobile Devices (up to 600px) */
+@media (max-width: 600px) {
+    .product-item {
+        width: calc(50% - 20px); /* Two items per row */
+    }
+
+    header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .search-form {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .search-form input {
+        width: calc(100% - 60px); /* Adjust input width */
+    }
+
+    .search-form button {
+        width: 60px;
+    }
+}
+
+/* Tablets (600px to 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .product-item {
+        width: calc(50% - 20px); /* Two items per row on tablets */
+    }
+
+    header {
+        padding: 15px;
+    }
+}
     </style>
 </head>
 <body>
@@ -152,9 +195,9 @@
                     </div>
                     <div class="product-item">
                         <img src="Assets/Screenshot (399).png" alt="PYJAMA FEMME HIVER">
-                        <h2>PYJAMA FEMME HIVER</h2>
+                        <h2>PYJAMA HIVER</h2>
                         <p class="price">$560.00</p>
-                        <a href="#" class="add-to-cart" data-name="PYJAMA FEMME HIVER" data-price="560.00" data-image="Assets/Screenshot (399).png">
+                        <a href="#" class="add-to-cart" data-name="PYJAMA HIVER" data-price="560.00" data-image="Assets/Screenshot (399).png">
                             Add to cart <i class="ri-shopping-cart-fill"></i>
                         </a>
                     </div>
@@ -168,9 +211,9 @@
                     </div>
                     <div class="product-item">
                         <img src="Assets/Screenshot (401).png" alt="Burkini Moda musulmana">
-                        <h2>Burkini Moda musulmana</h2>
+                        <h2>Burkini Moda</h2>
                         <p class="price">$1300.00</p>
-                        <a href="#" class="add-to-cart" data-name="Burkini Moda musulmana" data-price="1300.00" data-image="Assets/Screenshot (401).png">
+                        <a href="#" class="add-to-cart" data-name="Burkini Moda" data-price="1300.00" data-image="Assets/Screenshot (401).png">
                             Add to cart <i class="ri-shopping-cart-fill"></i>
                         </a>
                     </div>

@@ -208,3 +208,30 @@ button {
     width: 100%;
   }
 }
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+  .bottom-right-image {
+    display: none; /* Hide the image on smaller screens */
+  }
+  
+  .checkout-container {
+    padding: 10px;
+  }
+  
+  #checkout-form {
+    width: 100%; /* Ensure the form takes full width on mobile */
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group input, .form-group textarea {
+    width: 100%; /* Make inputs and textarea full width */
+  }
+}

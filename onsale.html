@@ -10,13 +10,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
     />
+    <link rel="icon" href="Assets/Screenshot (403).png" type="image/png" />
     <style>
       body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
       }
-
+      .center-text h2{
+           padding: 20PX;
+        }
       header {
         display: flex;
         justify-content: space-between;
@@ -120,6 +123,47 @@
       .center-text h2 {
         margin-bottom: 20px;
       }
+      /* Mobile Devices (up to 600px) */
+@media (max-width: 600px) {
+  .product-item {
+    width: calc(50% - 20px); /* Two items per row */
+  }
+
+  header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icons {
+    margin-top: 10px;
+  }
+
+  .search-form {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .search-form input {
+    width: calc(100% - 60px); /* Adjust input width */
+  }
+
+  .search-form button {
+    width: 60px;
+  }
+}
+
+/* Tablets (600px to 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .product-item {
+    width: calc(33.33% - 20px); /* Three items per row */
+  }
+
+  header {
+    padding: 15px;
+  }
+}
+
     </style>
   </head>
   <body>
@@ -173,14 +217,14 @@
             </div>
             <div class="product-item">
               <img src="Assets/Screenshot (391).png" alt="Skin-Care" />
-              <h2>Organic Skin Care Products</h2>
+              <h2>Organic Skin Care</h2>
               <p class="price">
                 <span class="old-price">$1000.00</span> $800.00
               </p>
               <a
                 href="#"
                 class="add-to-cart"
-                data-name="Organic Skin Care Products"
+                data-name="Organic Skin Care"
                 data-price="800.00"
                 data-image="Assets/Screenshot (391).png"
               >
@@ -192,14 +236,14 @@
                 src="Assets/Screenshot (392).png"
                 alt="STERLING SILVER NECKLACE"
               />
-              <h2>STERLING SILVER NECKLACE</h2>
+              <h2> SILVER NECKLACE</h2>
               <p class="price">
                 <span class="old-price">$389.00</span> $257.00
               </p>
               <a
                 href="#"
                 class="add-to-cart"
-                data-name="STERLING LADIES NECKLACE"
+                data-name="SILVER NECKLACE"
                 data-price="257.00"
                 data-image="Assets/Screenshot (392).png"
               >

@@ -44,6 +44,7 @@ header {
 
 .icons a {
   color: var(--text-color);
+  margin-left: 20px;
   font-size: 22px;
   margin-right: 20px;
   text-decoration: none;
@@ -540,14 +541,17 @@ section {
   display: none;
 }
 
-/* For screens 1050px or smaller */
 @media (max-width: 1050px) {
   #menu-icon {
     display: block;
-    position: fixed;
-    top: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
-    z-index: 1000; /* Ensure the icon is above other content */
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: auto; 
+    position: relative; 
+    z-index: 1001; 
+  }
+  .icons {
+    gap: 20px; /* Adjust space between icons */
   }
 
   .headerlist {
@@ -576,9 +580,7 @@ section {
     font-weight: 400;
     
   }
-}
-
-  
+}  
   :root {
     --h1-font: 4.5rem;
     --h2-font: 2.6rem;
